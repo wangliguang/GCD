@@ -11,6 +11,7 @@
 #import "ViewController.h"
 #import "OneImageViewController.h"
 #import "MoreImageViewViewController.h"
+#import "GCDLockViewController.h"
 
 
 @interface AppDelegate ()
@@ -48,9 +49,6 @@
     [button0 addTarget:self action:@selector(clickBtn0) forControlEvents:UIControlEventTouchUpInside];
     
     
-    
-
-    
     UIButton *button1 = [UIButton buttonWithType:UIButtonTypeCustom];
     
     button1.frame = CGRectMake(100, 300, 0,0);
@@ -76,10 +74,25 @@
     [button2 addTarget:self action:@selector(clickBtn2) forControlEvents:UIControlEventTouchUpInside];
     
     
+    UIButton *button3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    button3.frame = CGRectMake(100, 500, 0,0);
+    
+    [button3 setTitle:@"线程锁" forState:UIControlStateNormal];
+    
+    [button3 sizeToFit];
+    
+    button3.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
+    [VC.view addSubview:button3];
+    
+    [button3 addTarget:self action:@selector(clickBtn3) forControlEvents:UIControlEventTouchUpInside];
+    
+    
     [button0 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [button2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    
+    [button3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
     
     return YES;
@@ -102,6 +115,10 @@
     
 }
 
+- (void)clickBtn3{
+    
+    [VC.navigationController pushViewController:[GCDLockViewController new] animated:YES];
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

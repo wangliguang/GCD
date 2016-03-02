@@ -17,6 +17,7 @@
 		C6D3B2271C82942900D9AC06 /* GCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B2261C82942900D9AC06 /* GCDUITests.m */; };
 		C6D3B2A41C85BC2A00D9AC06 /* MoreImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B2A31C85BC2A00D9AC06 /* MoreImageViewViewController.m */; };
 		C6D3B2A71C85BCA600D9AC06 /* OneImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D3B2A61C85BCA600D9AC06 /* OneImageViewController.m */; };
+		C6F290FE1C8719DD00A00839 /* GCDLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F290FD1C8719DD00A00839 /* GCDLockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		C6D3B2A31C85BC2A00D9AC06 /* MoreImageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreImageViewViewController.m; sourceTree = "<group>"; };
 		C6D3B2A51C85BCA600D9AC06 /* OneImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneImageViewController.h; sourceTree = "<group>"; };
 		C6D3B2A61C85BCA600D9AC06 /* OneImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneImageViewController.m; sourceTree = "<group>"; };
+		C6F290FC1C8719DD00A00839 /* GCDLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDLockViewController.h; sourceTree = "<group>"; };
+		C6F290FD1C8719DD00A00839 /* GCDLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDLockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				C6D3B2A61C85BCA600D9AC06 /* OneImageViewController.m */,
 				C6D3B2A21C85BC2A00D9AC06 /* MoreImageViewViewController.h */,
 				C6D3B2A31C85BC2A00D9AC06 /* MoreImageViewViewController.m */,
+				C6F290FC1C8719DD00A00839 /* GCDLockViewController.h */,
+				C6F290FD1C8719DD00A00839 /* GCDLockViewController.m */,
 				C6D3B20A1C82942900D9AC06 /* Main.storyboard */,
 				C6D3B20D1C82942900D9AC06 /* Assets.xcassets */,
 				C6D3B20F1C82942900D9AC06 /* LaunchScreen.storyboard */,
@@ -285,6 +290,7 @@
 			files = (
 				C6D3B2A41C85BC2A00D9AC06 /* MoreImageViewViewController.m in Sources */,
 				C6D3B2091C82942900D9AC06 /* ViewController.m in Sources */,
+				C6F290FE1C8719DD00A00839 /* GCDLockViewController.m in Sources */,
 				C6D3B2061C82942900D9AC06 /* AppDelegate.m in Sources */,
 				C6D3B2A71C85BCA600D9AC06 /* OneImageViewController.m in Sources */,
 				C6D3B2031C82942900D9AC06 /* main.m in Sources */,
