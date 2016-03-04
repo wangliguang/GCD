@@ -38,7 +38,18 @@
         
         dispatch_async(concurrentQueue, ^{
             
-#pragma  mark *****************NSLock实现线程锁*******************
+            
+#pragma mark *****************不用线程锁，下面的购票的关键过程就可能会被打断，无法确认剩余的票数***********************
+            
+            //            if (ticketNum>0) {
+            //
+            //                ticketNum--;
+            //
+            //                NSLog(@"还剩%d张票",ticketNum);
+            //            }
+
+            
+#pragma  mark *****************NSLock实现线程锁，能保证票数是按照预知的一张一张减少，对比不用线程所的输出可知*******************
             //
             //            [lock lock];
             //
@@ -52,8 +63,8 @@
             //            [lock unlock];
             
             
-#pragma mark *****************synchronized方式实现线程锁**********
-            //            保证此时没有其它线程对selfl里的对象进行修改
+#pragma mark *****************synchronized方式实现线程锁，能保证票数是按照预知的一张一张减少**********
+            //保证此时没有其它线程对self里的对象进行修改
             @synchronized(self){
                 
                 if (ticketNum>0) {
@@ -65,14 +76,6 @@
             }
             
             
-#pragma mark *****************不用线程锁***********************
-            
-            //            if (ticketNum>0) {
-            //
-            //                ticketNum--;
-            //
-            //                NSLog(@"还剩%d张票",ticketNum);
-            //            }
             
             
             
